@@ -1,1 +1,30 @@
-<p>product-form works!</p>
+<div class = "formulario">
+
+<h2>Crear producto</h2>
+
+<input
+type="text"
+placeholder="nombre"
+[(ngModel)]="nombre">
+
+
+<input
+type="number"
+placeholder="Precio"
+[(ngModel)]="precio">
+
+<button
+(click)="crearProducto()"
+[disable]="nombre =='' || precio <=0">
+
+
+Crear
+
+</button>
+
+
+
+
+
+
+</div>
