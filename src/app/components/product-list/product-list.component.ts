@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ProductService } from '../../services/product.service';
 
 @Component({
   selector: 'app-product-list',
-  standalone: true,
-  imports: [],
-  templateUrl: './product-list.component.html',
-  styleUrl: './product-list.component.scss'
+  imports: [CommonModule],
+  templateUrl: './product-list.html',
+  styleUrl: './product-list.scss'
 })
-export class ProductListComponent {
+export class ProductList {
+
+  constructor(public productService:ProductService){
+
+  }
 
 }
