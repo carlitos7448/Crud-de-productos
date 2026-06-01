@@ -1,0 +1,19 @@
+<div class="lista">
+  <h2>Productos</h2>
+
+  <div
+    class="vacio"
+    *ngIf="productService.obtenerProductos().length === 0">
+    <span class="icono-advertencia">!</span>
+    <p>No hay productos para mostrar</p>
+  </div>
+
+  <div class="tarjetas" *ngIf="productService.obtenerProductos().length > 0">
+    <app-product-card
+      *ngFor="let producto of productService.obtenerProductos()"
+      [producto]="producto"
+      (eliminar)="onEliminar($event)"
+      (seleccionar)="onSeleccionar($event)">
+    </app-product-card>
+  </div>
+</div>

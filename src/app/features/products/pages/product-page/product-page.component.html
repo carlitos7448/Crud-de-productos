@@ -1,0 +1,13 @@
+<div class="product-page">
+  <section class="columna izquierda">
+    <app-product-list
+      (seleccionarProducto)="onSeleccionarProducto($event)">
+    </app-product-list>
+  </section>
+  <section class="columna derecha">
+    <app-product-form
+      [productoParaEditar]="productoSeleccionado"
+      (operacionCompletada)="productoSeleccionado = null">
+    </app-product-form>
+  </section>
+</div>

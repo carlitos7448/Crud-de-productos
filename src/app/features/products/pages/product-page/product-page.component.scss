@@ -1,0 +1,17 @@
+.product-page {
+  display: flex;
+  gap: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.columna {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .product-page {
+    flex-direction: column;
+  }
+}

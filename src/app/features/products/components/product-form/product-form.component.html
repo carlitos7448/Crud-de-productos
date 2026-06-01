@@ -1,0 +1,24 @@
+<div class="formulario">
+  <h2>{{ esEdicion ? 'Actualizar producto' : 'Crear producto' }}</h2>
+
+  <label for="nombre">Nombre</label>
+  <input
+    id="nombre"
+    type="text"
+    placeholder="Nombre"
+    [(ngModel)]="nombre">
+
+  <label for="precio">Precio</label>
+  <input
+    id="precio"
+    type="number"
+    placeholder="Precio"
+    [(ngModel)]="precio">
+
+  <button
+    type="button"
+    (click)="enviar()"
+    [disabled]="!formularioValido">
+    {{ esEdicion ? 'Actualizar' : 'Crear' }}
+  </button>
+</div>

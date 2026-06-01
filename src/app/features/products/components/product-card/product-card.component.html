@@ -1,0 +1,7 @@
+<div class="card" (click)="onSeleccionar()">
+  <h3>{{ producto.nombre }}</h3>
+  <p>${{ producto.precio }}</p>
+  <button type="button" class="btn-eliminar" (click)="onEliminar($event)">
+    Eliminar
+  </button>
+</div>

@@ -1,0 +1,33 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.formulario h2 {
+  margin-top: 0;
+}
+
+.formulario label {
+  font-weight: 500;
+}
+
+.formulario input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario button {
+  padding: 0.6rem 1rem;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario button:disabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+}
